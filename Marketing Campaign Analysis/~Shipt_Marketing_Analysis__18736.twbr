@@ -1,0 +1,2029 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0208.0338                               -->
+<workbook original-version='18.1' source-build='2024.3.4 (20243.25.0208.0338)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='marketing_dataset' inline='true' name='federated.1qssn400q4tm4115aulx71cbfrhv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='marketing_dataset' name='textscan.1h2goqq11zoovu0zwb7z9126ra9n'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/tittl/Documents/Data Analaysis Projects/Marketing Campaign Analysis/marketing_dataset.csv' dataRefreshTime='' directory='C:/Users/tittl/Documents/Data Analaysis Projects/Marketing Campaign Analysis' filename='C:/Users/tittl/AppData/Local/Temp/TableauTemp/0gct3sd0hevqm01g4jf8d0100tfe/marketing_dataset.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1h2goqq11zoovu0zwb7z9126ra9n' name='marketing_dataset.csv' table='[marketing_dataset#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AD1001:no:A1:AD1001:1' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='region' ordinal='1' />
+            <column datatype='string' name='market_id' ordinal='2' />
+            <column datatype='string' name='campaign_id' ordinal='3' />
+            <column datatype='string' name='campaign_name' ordinal='4' />
+            <column datatype='string' name='channel' ordinal='5' />
+            <column datatype='string' name='device' ordinal='6' />
+            <column datatype='string' name='audience_segment' ordinal='7' />
+            <column datatype='real' name='incentive_spend' ordinal='8' />
+            <column datatype='real' name='marketing_spend' ordinal='9' />
+            <column datatype='real' name='total_spend' ordinal='10' />
+            <column datatype='integer' name='orders_placed' ordinal='11' />
+            <column datatype='integer' name='orders_fulfilled' ordinal='12' />
+            <column datatype='integer' name='orders_unfulfilled' ordinal='13' />
+            <column datatype='integer' name='shoppers_active' ordinal='14' />
+            <column datatype='integer' name='shoppers_needed' ordinal='15' />
+            <column datatype='integer' name='supply_gap' ordinal='16' />
+            <column datatype='real' name='gross_revenue' ordinal='17' />
+            <column datatype='real' name='net_revenue' ordinal='18' />
+            <column datatype='real' name='avg_order_value' ordinal='19' />
+            <column datatype='integer' name='new_customers' ordinal='20' />
+            <column datatype='real' name='customer_ltv' ordinal='21' />
+            <column datatype='real' name='customer_retention_rate' ordinal='22' />
+            <column datatype='integer' name='impressions' ordinal='23' />
+            <column datatype='integer' name='clicks' ordinal='24' />
+            <column datatype='real' name='click_through_rate' ordinal='25' />
+            <column datatype='real' name='conversion_rate' ordinal='26' />
+            <column datatype='real' name='avg_delivery_time_min' ordinal='27' />
+            <column datatype='integer' name='order_cancellations' ordinal='28' />
+            <column datatype='real' name='satisfaction_score' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AD1001:no:A1:AD1001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>23000</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[market_id]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>market_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaign_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[campaign_id]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>campaign_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaign_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[campaign_name]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>campaign_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[channel]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>channel</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>device</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[device]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>device</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>audience_segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[audience_segment]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>audience_segment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incentive_spend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[incentive_spend]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>incentive_spend</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marketing_spend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[marketing_spend]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>marketing_spend</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_spend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_spend]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>total_spend</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orders_placed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[orders_placed]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>orders_placed</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orders_fulfilled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[orders_fulfilled]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>orders_fulfilled</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orders_unfulfilled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[orders_unfulfilled]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>orders_unfulfilled</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shoppers_active</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shoppers_active]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>shoppers_active</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shoppers_needed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shoppers_needed]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>shoppers_needed</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>supply_gap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[supply_gap]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>supply_gap</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gross_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gross_revenue]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>gross_revenue</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_revenue]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>net_revenue</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_order_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_order_value]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>avg_order_value</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[new_customers]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>new_customers</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_ltv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customer_ltv]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>customer_ltv</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_retention_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customer_retention_rate]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>customer_retention_rate</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[impressions]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>impressions</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clicks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clicks]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>clicks</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>click_through_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[click_through_rate]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>click_through_rate</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversion_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conversion_rate]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>conversion_rate</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_delivery_time_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_delivery_time_min]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>avg_delivery_time_min</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_cancellations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_cancellations]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>order_cancellations</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>satisfaction_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[satisfaction_score]</local-name>
+            <parent-name>[marketing_dataset.csv]</parent-name>
+            <remote-alias>satisfaction_score</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ROAS' datatype='real' name='[Calculation_1318428835783180288]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([gross_revenue])/SUM([total_spend])' />
+      </column>
+      <column caption='CAC' datatype='real' name='[Calculation_1318428835783507969]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([total_spend])/SUM([new_customers])' />
+      </column>
+      <column caption='Stage' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Value' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column caption='marketing_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]' role='measure' type='quantitative' />
+      <column caption='Audience Segment' datatype='string' name='[audience_segment]' role='dimension' type='nominal' />
+      <column caption='Avg Delivery Time Min' datatype='real' name='[avg_delivery_time_min]' role='measure' type='quantitative' />
+      <column caption='Avg Order Value' datatype='real' name='[avg_order_value]' role='measure' type='quantitative' />
+      <column caption='Campaign Id' datatype='string' name='[campaign_id]' role='dimension' type='nominal' />
+      <column caption='Campaign Name' datatype='string' name='[campaign_name]' role='dimension' type='nominal' />
+      <column caption='Channel' datatype='string' name='[channel]' role='dimension' type='nominal' />
+      <column caption='Click Through Rate' datatype='real' name='[click_through_rate]' role='measure' type='quantitative' />
+      <column caption='Clicks' datatype='integer' name='[clicks]' role='measure' type='quantitative' />
+      <column caption='Conversion Rate' datatype='real' name='[conversion_rate]' role='measure' type='quantitative' />
+      <column caption='Customer Ltv' datatype='real' name='[customer_ltv]' role='measure' type='quantitative' />
+      <column caption='Customer Retention Rate' datatype='real' name='[customer_retention_rate]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Device' datatype='string' name='[device]' role='dimension' type='nominal' />
+      <column caption='Gross Revenue' datatype='real' name='[gross_revenue]' role='measure' type='quantitative' />
+      <column caption='Impressions' datatype='integer' name='[impressions]' role='measure' type='quantitative' />
+      <column caption='Incentive Spend' datatype='real' name='[incentive_spend]' role='measure' type='quantitative' />
+      <column caption='Market Id' datatype='string' name='[market_id]' role='dimension' type='nominal' />
+      <column caption='Marketing Spend' datatype='real' name='[marketing_spend]' role='measure' type='quantitative' />
+      <column caption='Net Revenue' datatype='real' name='[net_revenue]' role='measure' type='quantitative' />
+      <column caption='New Customers' datatype='integer' name='[new_customers]' role='measure' type='quantitative' />
+      <column caption='Order Cancellations' datatype='integer' name='[order_cancellations]' role='measure' type='quantitative' />
+      <column caption='Orders Fulfilled' datatype='integer' name='[orders_fulfilled]' role='measure' type='quantitative' />
+      <column caption='Orders Placed' datatype='integer' name='[orders_placed]' role='measure' type='quantitative' />
+      <column caption='Orders Unfulfilled' datatype='integer' name='[orders_unfulfilled]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Satisfaction Score' datatype='real' name='[satisfaction_score]' role='measure' type='quantitative' />
+      <column caption='Shoppers Active' datatype='integer' name='[shoppers_active]' role='measure' type='quantitative' />
+      <column caption='Shoppers Needed' datatype='integer' name='[shoppers_needed]' role='measure' type='quantitative' />
+      <column caption='Supply Gap' datatype='integer' name='[supply_gap]' role='measure' type='quantitative' />
+      <column caption='Total Spend' datatype='real' name='[total_spend]' role='measure' type='quantitative' />
+      <column-instance column='[gross_revenue]' derivation='Sum' name='[sum:gross_revenue:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_spend]' derivation='Sum' name='[sum:total_spend:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1318428835783180288]' derivation='User' name='[usr:Calculation_1318428835783180288:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1318428835783507969]' derivation='User' name='[usr:Calculation_1318428835783507969:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/tittl/AppData/Local/Temp/TableauTemp/#TableauTemp_1bukw8a01liw1v1fljjh8088bnq9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/21/2025 05:56:45 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>1</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[market_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>campaign_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[campaign_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>campaign_id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>campaign_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[campaign_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>campaign_name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel</remote-alias>
+              <ordinal>5</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>device</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[device]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>device</remote-alias>
+              <ordinal>6</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>audience_segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[audience_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>audience_segment</remote-alias>
+              <ordinal>7</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incentive_spend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[incentive_spend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>incentive_spend</remote-alias>
+              <ordinal>8</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>999</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marketing_spend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[marketing_spend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marketing_spend</remote-alias>
+              <ordinal>9</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_spend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_spend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_spend</remote-alias>
+              <ordinal>10</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>orders_placed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[orders_placed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>orders_placed</remote-alias>
+              <ordinal>11</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>771</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>orders_fulfilled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[orders_fulfilled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>orders_fulfilled</remote-alias>
+              <ordinal>12</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>790</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>orders_unfulfilled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[orders_unfulfilled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>orders_unfulfilled</remote-alias>
+              <ordinal>13</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>224</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shoppers_active</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[shoppers_active]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shoppers_active</remote-alias>
+              <ordinal>14</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>396</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shoppers_needed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[shoppers_needed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shoppers_needed</remote-alias>
+              <ordinal>15</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>460</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>supply_gap</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[supply_gap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>supply_gap</remote-alias>
+              <ordinal>16</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gross_revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gross_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gross_revenue</remote-alias>
+              <ordinal>17</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[net_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_revenue</remote-alias>
+              <ordinal>18</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_order_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_order_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_order_value</remote-alias>
+              <ordinal>19</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>940</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[new_customers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_customers</remote-alias>
+              <ordinal>20</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>418</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_ltv</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[customer_ltv]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_ltv</remote-alias>
+              <ordinal>21</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_retention_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[customer_retention_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_retention_rate</remote-alias>
+              <ordinal>22</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>impressions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[impressions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>impressions</remote-alias>
+              <ordinal>23</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>996</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clicks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[clicks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clicks</remote-alias>
+              <ordinal>24</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>935</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>click_through_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[click_through_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>click_through_rate</remote-alias>
+              <ordinal>25</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>723</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conversion_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[conversion_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conversion_rate</remote-alias>
+              <ordinal>26</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>942</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_delivery_time_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_delivery_time_min]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_delivery_time_min</remote-alias>
+              <ordinal>27</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>955</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_cancellations</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[order_cancellations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_cancellations</remote-alias>
+              <ordinal>28</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>92</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>satisfaction_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[satisfaction_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>satisfaction_score</remote-alias>
+              <ordinal>29</ordinal>
+              <family>marketing_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:gross_revenue:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783507969:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783180288:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:total_spend:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='marketing_dataset.csv' id='marketing_dataset.csv_EDE7E61B280042EB9910CF98BDAC4B74'>
+            <properties context=''>
+              <relation connection='textscan.1h2goqq11zoovu0zwb7z9126ra9n' name='marketing_dataset.csv' table='[marketing_dataset#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:AD1001:no:A1:AD1001:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='region' ordinal='1' />
+                  <column datatype='string' name='market_id' ordinal='2' />
+                  <column datatype='string' name='campaign_id' ordinal='3' />
+                  <column datatype='string' name='campaign_name' ordinal='4' />
+                  <column datatype='string' name='channel' ordinal='5' />
+                  <column datatype='string' name='device' ordinal='6' />
+                  <column datatype='string' name='audience_segment' ordinal='7' />
+                  <column datatype='real' name='incentive_spend' ordinal='8' />
+                  <column datatype='real' name='marketing_spend' ordinal='9' />
+                  <column datatype='real' name='total_spend' ordinal='10' />
+                  <column datatype='integer' name='orders_placed' ordinal='11' />
+                  <column datatype='integer' name='orders_fulfilled' ordinal='12' />
+                  <column datatype='integer' name='orders_unfulfilled' ordinal='13' />
+                  <column datatype='integer' name='shoppers_active' ordinal='14' />
+                  <column datatype='integer' name='shoppers_needed' ordinal='15' />
+                  <column datatype='integer' name='supply_gap' ordinal='16' />
+                  <column datatype='real' name='gross_revenue' ordinal='17' />
+                  <column datatype='real' name='net_revenue' ordinal='18' />
+                  <column datatype='real' name='avg_order_value' ordinal='19' />
+                  <column datatype='integer' name='new_customers' ordinal='20' />
+                  <column datatype='real' name='customer_ltv' ordinal='21' />
+                  <column datatype='real' name='customer_retention_rate' ordinal='22' />
+                  <column datatype='integer' name='impressions' ordinal='23' />
+                  <column datatype='integer' name='clicks' ordinal='24' />
+                  <column datatype='real' name='click_through_rate' ordinal='25' />
+                  <column datatype='real' name='conversion_rate' ordinal='26' />
+                  <column datatype='real' name='avg_delivery_time_min' ordinal='27' />
+                  <column datatype='integer' name='order_cancellations' ordinal='28' />
+                  <column datatype='real' name='satisfaction_score' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Campaign Leaderboard'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2C2CAC91-E8D6-4177-8F55-967F83F9B4BB}' />
+    </worksheet>
+    <worksheet name='Customer Retention Rate'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BEE0CC0B-F218-4DFE-A246-5EC2CB4F191A}' />
+    </worksheet>
+    <worksheet name='Delivery Reliability vs Satisfaction'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4F1C0E7E-ADBF-489B-A606-68C1CD8A87A8}' />
+    </worksheet>
+    <worksheet name='Incentive Spend Efficiency'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5C78AC33-1BEE-4F1B-BCF9-0CBF56389969}' />
+    </worksheet>
+    <worksheet name='KPI TIles'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_dataset' name='federated.1qssn400q4tm4115aulx71cbfrhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qssn400q4tm4115aulx71cbfrhv'>
+            <column caption='ROAS' datatype='real' name='[Calculation_1318428835783180288]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([gross_revenue])/SUM([total_spend])' />
+            </column>
+            <column caption='CAC' datatype='real' name='[Calculation_1318428835783507969]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([total_spend])/SUM([new_customers])' />
+            </column>
+            <column caption='Gross Revenue' datatype='real' name='[gross_revenue]' role='measure' type='quantitative' />
+            <column caption='Incentive Spend' datatype='real' name='[incentive_spend]' role='measure' type='quantitative' />
+            <column caption='Net Revenue' datatype='real' name='[net_revenue]' role='measure' type='quantitative' />
+            <column caption='New Customers' datatype='integer' name='[new_customers]' role='measure' type='quantitative' />
+            <column-instance column='[gross_revenue]' derivation='Sum' name='[sum:gross_revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[incentive_spend]' derivation='Sum' name='[sum:incentive_spend:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[net_revenue]' derivation='Sum' name='[sum:net_revenue:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Spend' datatype='real' name='[total_spend]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1318428835783180288]' derivation='User' name='[usr:Calculation_1318428835783180288:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1318428835783507969]' derivation='User' name='[usr:Calculation_1318428835783507969:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783507969:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:gross_revenue:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:incentive_spend:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:net_revenue:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783180288:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:incentive_spend:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:gross_revenue:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:net_revenue:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783180288:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783507969:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='39' />
+            <format attr='width' value='1308' />
+            <format attr='width' field='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' value='304' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1qssn400q4tm4115aulx71cbfrhv].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>$&lt;</run>
+                <run>[federated.1qssn400q4tm4115aulx71cbfrhv].[Multiple Values]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{2E599386-A5EB-4F1F-BBA4-33C63BB87356}' />
+    </worksheet>
+    <worksheet name='LTV vs CAC'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{82FEDE32-2E54-4B96-81CF-8026DDDCCA01}' />
+    </worksheet>
+    <worksheet name='ROAS by Region'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EE55937F-685C-4D4E-B2C6-D5151CF2CDDF}' />
+    </worksheet>
+    <worksheet name='ROAS vs CAC'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_dataset' name='federated.1qssn400q4tm4115aulx71cbfrhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qssn400q4tm4115aulx71cbfrhv'>
+            <column caption='ROAS' datatype='real' name='[Calculation_1318428835783180288]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([gross_revenue])/SUM([total_spend])' />
+            </column>
+            <column caption='CAC' datatype='real' name='[Calculation_1318428835783507969]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([total_spend])/SUM([new_customers])' />
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Gross Revenue' datatype='real' name='[gross_revenue]' role='measure' type='quantitative' />
+            <column caption='New Customers' datatype='integer' name='[new_customers]' role='measure' type='quantitative' />
+            <column caption='Total Spend' datatype='real' name='[total_spend]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1318428835783180288]' derivation='User' name='[usr:Calculation_1318428835783180288:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1318428835783507969]' derivation='User' name='[usr:Calculation_1318428835783507969:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Week' name='[wk:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783507969:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783180288:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783507969:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783180288:qk] + [federated.1qssn400q4tm4115aulx71cbfrhv].[usr:Calculation_1318428835783507969:qk])</rows>
+        <cols>[federated.1qssn400q4tm4115aulx71cbfrhv].[wk:date:ok]</cols>
+      </table>
+      <simple-id uuid='{3A8CB6B7-32CB-4087-9678-667AC24D0948}' />
+    </worksheet>
+    <worksheet name='Regional Heatmap'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9365E448-0F93-4057-86E4-EC7919366C13}' />
+    </worksheet>
+    <worksheet name='Segment Analysis'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C3779B75-F775-43DA-BD7A-198AB1D8DB70}' />
+    </worksheet>
+    <worksheet name='Spend vs Revenue'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_dataset' name='federated.1qssn400q4tm4115aulx71cbfrhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qssn400q4tm4115aulx71cbfrhv'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Gross Revenue' datatype='real' name='[gross_revenue]' role='measure' type='quantitative' />
+            <column-instance column='[gross_revenue]' derivation='Sum' name='[sum:gross_revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_spend]' derivation='Sum' name='[sum:total_spend:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Spend' datatype='real' name='[total_spend]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Week' name='[wk:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:gross_revenue:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:total_spend:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f1ce63' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1qssn400q4tm4115aulx71cbfrhv].[sum:gross_revenue:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1qssn400q4tm4115aulx71cbfrhv].[sum:total_spend:qk] + [federated.1qssn400q4tm4115aulx71cbfrhv].[sum:gross_revenue:qk])</rows>
+        <cols>[federated.1qssn400q4tm4115aulx71cbfrhv].[wk:date:ok]</cols>
+      </table>
+      <simple-id uuid='{46655087-B765-4D99-BC10-08AC7455AAB4}' />
+    </worksheet>
+    <worksheet name='Supply-Demand Balance'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D1EEB743-AA09-4E44-BB7C-49A11E5CE30E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Customer &amp; Shopper Insights'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='15' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{49A52302-F9A9-4A8B-B7DF-12D2D2C2CFE0}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Executive Market Health'>
+      <style />
+      <size maxheight='860' maxwidth='1550' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98140' id='19' param='horz' type-v2='layout-flow' w='98968' x='516' y='930'>
+            <zone h='98140' id='17' type-v2='layout-basic' w='98968' x='516' y='930'>
+              <zone h='10814' id='13' name='KPI TIles' show-title='false' w='67227' x='32257' y='930'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='10814' id='15' type-v2='text' w='31741' x='516' y='930'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontsize='36' underline='true'>Market Health</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='87326' id='16' name='Spend vs Revenue' w='48259' x='516' y='11744'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='87326' id='21' name='ROAS vs CAC' w='50709' x='48775' y='11744'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='24' param='vert' type-v2='layout-flow' w='98968' x='516' y='930'>
+                <zone forceUpdate='true' h='10814' id='15' type-v2='text' w='28431' x='516' y='930'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='36' underline='true'>Market Health</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='85' h='10814' id='13' is-fixed='true' name='KPI TIles' show-title='false' w='60214' x='28947' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='87326' id='16' is-fixed='true' name='Spend vs Revenue' w='43226' x='516' y='11744'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='87326' id='21' is-fixed='true' name='ROAS vs CAC' w='45419' x='43742' y='11744'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{08735B95-D0BD-470B-BCA0-6E789D8E97F9}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Regional &amp; Campaign Optimization'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='15' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6B9432BA-C104-432A-A800-26455F392FD2}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{163DF2E5-1CB8-42BF-8887-CEB78380992D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Executive Market Health' tab-color='#4f779a'>
+      <viewpoints>
+        <viewpoint name='KPI TIles'>
+          <zoom type='fit-width' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='ROAS vs CAC'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Spend vs Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7D2B2F9E-8F87-43BC-9D55-756020A26E60}' />
+    </window>
+    <window class='worksheet' name='KPI TIles' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{6E1C286A-A267-47FB-8A7F-BDAEFE126A3A}' />
+    </window>
+    <window class='worksheet' name='Spend vs Revenue' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7E48EC27-C624-4007-B05D-0EF9FA404A13}' />
+    </window>
+    <window class='worksheet' name='ROAS vs CAC' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='7' param='[federated.1qssn400q4tm4115aulx71cbfrhv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{97E2B480-9E0F-46A5-BA82-127E8EB29427}' />
+    </window>
+    <window class='worksheet' name='Supply-Demand Balance' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A3A1AC5A-C526-4CED-ADDD-272D92DB4E91}' />
+    </window>
+    <window class='dashboard' name='Regional &amp; Campaign Optimization' tab-color='#f66273'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{29C89D32-0685-451A-BC06-50ADC4EEF950}' />
+    </window>
+    <window class='worksheet' name='Regional Heatmap' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4E1CD891-2583-4442-805D-AA5549A16E00}' />
+    </window>
+    <window class='worksheet' name='ROAS by Region' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A96B809-1FCB-4B38-96B2-023584AA867A}' />
+    </window>
+    <window class='worksheet' name='Campaign Leaderboard' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F72D9A7-C501-4321-8395-B9345ED49314}' />
+    </window>
+    <window class='worksheet' name='Incentive Spend Efficiency' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9E4A6393-181A-42E6-848B-07944F3515BB}' />
+    </window>
+    <window class='dashboard' name='Customer &amp; Shopper Insights' tab-color='#dec77b'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{0ADA43AE-ED04-4558-B99A-6B9A7FF3822F}' />
+    </window>
+    <window class='worksheet' name='LTV vs CAC' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66AC5E0C-2058-400E-89A3-7EDEFFE429CC}' />
+    </window>
+    <window class='worksheet' name='Customer Retention Rate' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FBA0B899-83D0-427F-B366-983AB4C3E974}' />
+    </window>
+    <window class='worksheet' name='Delivery Reliability vs Satisfaction' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{403FA4F0-F77F-4321-8A26-CE125D63CE26}' />
+    </window>
+    <window class='worksheet' name='Segment Analysis' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1C682B34-3CEF-4E5D-940E-4825EE3186B7}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{38535307-28BB-40F3-B29F-78FE9C6DCD07}' />
+    </window>
+  </windows>
+</workbook>
